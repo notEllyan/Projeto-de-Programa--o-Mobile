@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:contentDescription="LUA" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="377dp"
+        android:layout_height="684dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="341dp">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="444dp"
+                android:layout_x="390dp"
+                android:layout_y="1dp" />
+        </WebView>
+
+        <Button
+            android:id="@+id/welcomeButton"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PROJETO M" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_marginStart="16dp"
+            android:text="Olá, este é o projeto M. \nA música pode proporcionar relaxamento, alívio do estresse, melhoria do humor, estímulo da criatividade, conexão emocional, aumento do foco e da memória, e pode ser uma forma de expressão artística e cultural.\n\nPor isso, apenas relaxe escute uma música, faz bem para passar o tempo."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="358dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="16dp"
+            android:text="Aplicativo desenvolvido para a disciplina de programação para dispositivos móveis. Qualquer uso de sites ou midias externas é totalmente para uso didático e fins não comerciais.\n \nInstituição: CEUB \nAluno: Ellyan Gonzalez Lopes \nRA: 72250100"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
